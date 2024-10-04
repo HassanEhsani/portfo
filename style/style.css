@@ -60,25 +60,21 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgba(161, 228, 38, 0.849);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(194, 205, 90);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(194, 205, 80);
 }
 
 .sec5 {
@@ -92,10 +88,10 @@ section {
 }
 @keyframes scaleAnim {
   0% {
-    transform: translateY(-100%) scale(0);
+    transform: translateY(-100%) scaleY(0);
   }
   100% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0) scaleY(1);
   }
 }
 
@@ -134,4 +130,9 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=style.css.map */
